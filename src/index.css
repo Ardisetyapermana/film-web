@@ -54,6 +54,12 @@ body {
   margin: 0;
 }
 
+.ringkasan {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
 #root {
   width: 1126px;
   max-width: 100%;
