@@ -1,16 +1,31 @@
-# React + Vite
+<!-- @format -->
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# CineList (film-frontend)
 
-Currently, two official plugins are available:
+Aplikasi katalog film berbasis React + Vite + Tailwind CSS.
+Proyek ini dikembangkan bertahap sampai Pekan 14 menjadi aplikasi fullstack.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Halaman
 
-## React Compiler
+- Dashboard (ringkasan + grid kartu)
+- Daftar Film (tabel)
+- Tambah Film (form)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Screenshot
 
-## Expanding the ESLint configuration
+### Desktop
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+![Dashboard MObile](docs/mobile-view-1.png)
+![Dashboard MObile](docs/mobile-view-2.png)
+![Dashboard MObile](docs/mobile-view-3.png)
+![Dashboard MObile](docs/mobile-view-4.png)▐
+
+### web
+
+![Dashboard web](docs/web-view-1.png)
+![Dashboard web](docs/web-view-2.png)
+![Dashboard web](docs/web-view-3.png)
+
+## Alasan memilih Tailwind CSS
+
+Saya memilih Tailwind CSS karena aplikasi CineList berfokus pada tampilan kartu dan tabel yang perlu disesuaikan desainnya (tema film). Tailwind berbasis utility class sehingga styling bisa dilakukan langsung di JSX tanpa file CSS terpisah, cocok dengan arsitektur component React. Prefix responsif seperti sm:, md:, dan lg: memudahkan layout menyesuaikan mobile dan desktop. Berbeda dengan Bootstrap yang tampilannya sudah jadi dan cenderung seragam, Tailwind memberi kebebasan desain, dan hanya class yang dipakai yang masuk ke build akhir.
